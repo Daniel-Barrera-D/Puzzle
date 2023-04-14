@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10rem;
+}
+
+#piezas {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 0fr);
+    align-items: flex-end;
+    gap: 2px;
+}
+
+#puzzle {
+    display: grid;
+    width: 484px;
+    grid-template-columns: repeat(3, 0fr);
+}
+
+.pieza {
+    height: 173px;
+    width: 173px;
+    background-size: cover;
+}
+
+.placeholder {
+    background-color: #F2F2F2;
+    outline: 1px solid #333;
+    height: 173px;
+    width: 173px;
+    transition: 1s;
+}
+
+.placeholder.hover {
+    background-color: rgb(236, 57, 57);
+}
+
+#mensaje {
+    color: black;
+    text-align: center;
+    display: none;
+}
+
+.ganaste {
+    background-color: #00ff80;
+}
+
+.ganaste #mensaje {
+    display: block;
+}
+
+.ganaste .placeholder {
+    outline: none;
+}
+
+.ganaste #piezas {
+    display: none;
+}
+
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+} */
